@@ -87,12 +87,18 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/theme"
+              ]
+            },
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/theme/vdw.scss"
             ],
             "scripts": []
           }
@@ -123,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scss-problem"
+    }
+  },
+  "defaultProject": "scss-problem",
+  "cli": {
+    "analytics": "be0dbdbe-bf54-465e-a33a-d21897867f69"
+  }
 }
